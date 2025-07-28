@@ -54,5 +54,5 @@ npm run start
 ## 2-ой git bash
 cd t1-accounter/accounter
 npm install
-npm run build
+npm run dev
 ```
