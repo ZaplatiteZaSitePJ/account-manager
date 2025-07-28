@@ -1,9 +1,15 @@
 .container {
 	padding: 40px 55px;
+	height: calc(100vh - 118px);
+	overflow: auto;
+
+	@media(max-width: 425px) {
+		padding: 40px 20px;
+	}
 }
 
 .title {
 	font-size: var(--giant-font-size);
 	font-weight: bold;
-	margin-bottom: 64px;
+	margin-bottom: 42px;
 }

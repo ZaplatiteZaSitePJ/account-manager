@@ -50,6 +50,7 @@ export default function MainLayout() {
               style={{
                 display: menuVisible ? "block" : "none",
               }}
+              onClick={onBurgerClick}
             >
 
             </button>

@@ -4,12 +4,20 @@
 	flex-wrap: wrap;
 	gap: 32px;
 
+	@media(max-width: 425px) {
+		gap: 52px
+	}
+
 	&__nameContainer,
 	&__contactsContainer,
 	&__passwordContainer {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 24px 24px;
+
+		@media(max-width: 425px) {
+			gap: 36px
+		}
 	}
 
 	&__buttonsContainer {
@@ -17,6 +25,12 @@
 		display: flex;
 		gap: 48px;
 		justify-content: end;
+
+		@media(max-width: 425px) {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 36px;
+		}
 	}
 
 	&__userAgreement {
@@ -33,6 +47,13 @@ h2 {
 	font-size: var(--large-font-size);
 	font-weight: bold;
 	width: 100%;
+
+	@media(max-width: 425px) {
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 36px;
+			margin-bottom: 0;
+	}
 }
 
 .errorDiv {
