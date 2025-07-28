@@ -33,7 +33,6 @@ const CreateForm = () => {
 
 	const onCreate = async () => {
 		try {
-			console.log(getValues());
 			await handleCreate(getValues());
 			navigate("/");
 		} catch (error) {
@@ -89,7 +88,9 @@ const CreateForm = () => {
 				<PhoneField
 					register={register("telephone", phoneOptions)}
 					subContent={
-						errors.telephone && <div className={styles.errorDiv}></div>
+						errors.telephone && (
+							<div className={styles.errorDiv}></div>
+						)
 					}
 				/>
 

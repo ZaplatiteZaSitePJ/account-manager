@@ -16,14 +16,12 @@ const LoginForm = () => {
 
 	const navigate = useNavigate();
 
-
 	const onAuth = async () => {
 		try {
 			const id = await handleLogin(
 				getValues("email"),
 				getValues("password")
 			);
-			console.log(getValues());
 
 			localStorage.setItem("userId", String(id));
 			reset();

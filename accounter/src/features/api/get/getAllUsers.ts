@@ -11,7 +11,6 @@ export const getAllUsers = async () => {
 			withCredentials: true,
 		});
 
-		console.log("Все пользователи:", response.data);
 		return response.data;
 	} catch (error: unknown) {
 		if (

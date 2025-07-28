@@ -4,7 +4,6 @@ import CreateForm from "@widgets/CreateForm/CreateForm";
 
 export default function CreatePage() {
 	const { id } = useLoaderData();
-	console.log(id);
 
 	return (
 		<div className={styles.container}>

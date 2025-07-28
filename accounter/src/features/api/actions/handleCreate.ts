@@ -51,7 +51,7 @@ export const handleCreate = async (newUser: AccountType) => {
 			withCredentials: true,
 		});
 
-		console.log("Успешное создание аккаунта", response.data);
+		console.log("Успешное создание аккаунта", response.status);
 	} catch (error: unknown) {
 		console.error("Ошибка создания:", error);
 		throw error;

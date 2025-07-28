@@ -17,7 +17,7 @@ export const handleLogin = async (
 			}
 		);
 
-		console.log("Логин успешен:", response.data);
+		console.log("Логин успешен:", response.status);
 
 		const info = await baseAxios.get("/auth/me", {
 			headers: {
@@ -26,10 +26,9 @@ export const handleLogin = async (
 			withCredentials: true,
 		});
 
-		console.log("Информация:", info.data);
 		return info.data.sub;
-	} catch (error: any) {
-		console.error("Ошибка логина:", error.response?.data || error.message);
+	} catch (error) {
+		console.error("Ошибка логина:", error);
 		throw error;
 	}
 };

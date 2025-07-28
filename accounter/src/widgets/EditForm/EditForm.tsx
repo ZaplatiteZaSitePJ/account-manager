@@ -31,8 +31,6 @@ const EditForm = () => {
 
 	const userAgreement = watch("userAgreement");
 
-	console.log(userData.telephone);
-
 	useEffect(() => {
 		if (userData) {
 			reset(userData);
@@ -45,7 +43,6 @@ const EditForm = () => {
 			id: userData.id,
 			userAgreement: !!userAgreement,
 		};
-		console.log(editedUser);
 		await handleEdit(editedUser);
 		navigate("/");
 	};

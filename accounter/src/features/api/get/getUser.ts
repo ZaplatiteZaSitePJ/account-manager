@@ -13,7 +13,6 @@ export const getUser = async () => {
 			withCredentials: true,
 		});
 
-		console.log("Информация:", response.data);
 		return response.data;
 	} catch (error: unknown) {
 		if (
