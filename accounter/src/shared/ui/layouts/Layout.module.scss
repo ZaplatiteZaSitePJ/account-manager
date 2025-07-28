@@ -190,4 +190,10 @@
 		width: 100%;
 		background-color: var(--light-black-color);
 	}
+
+	@media(max-width: 1023px) {
+		width: 95vw;
+		height: 100vh
+	}
+
 }
