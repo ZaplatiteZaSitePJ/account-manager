@@ -1,0 +1,17 @@
+:root {
+	font-size: var(--normal-font-size);
+	font-family: "Arial";
+	color: var(--light-grey-color);
+}
+
+a,
+a:link,
+a:visited {
+	transition: ease 0.2s;
+	color: var(--light-grey-color);
+	height: fit-content;
+}
+
+a:hover {
+	color: var(--grey-color);
+}

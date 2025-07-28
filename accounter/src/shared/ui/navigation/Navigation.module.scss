@@ -1,0 +1,33 @@
+.navigation {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	width: 100%;
+	margin: 55px auto;
+	padding: 0 16px;
+	font-size: var(--small-font-size);
+
+	&__pages {
+		font-weight: bold;
+		transition: ease 0.2s;
+		color: var(--grey-color) !important;
+
+		&:hover {
+			color: var(--light-grey-color) !important;
+		}
+	}
+
+	&__logout {
+		width: fit-content;
+		margin-top: 60vh;
+
+		@media (max-width: 1280px) {
+			margin-top: 50vh;
+		}
+	}
+
+	&__active {
+		font-size: var(--normal-font-size);
+		color: var(--light-grey-color) !important;
+	}
+}

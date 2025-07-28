@@ -1,0 +1,16 @@
+:root {
+	/* FONTS */
+	--normal-font-size: 20px;
+	--large-font-size: 1.2rem;
+	--giant-font-size: 1.6rem;
+	--small-font-size: 0.8rem;
+
+	/* COLORS */
+	/* PREVIOS */
+	--black-color: #282828;
+	--light-black-color: #2c2c2c;
+	--grey-color: #8d8e8f;
+	--light-grey-color: #d9d9d9;
+	--green-color: #3f9c37;
+	--red-color: #cc4747;
+}

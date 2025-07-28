@@ -1,0 +1,21 @@
+{
+	"files": [],
+	"references": [
+		{ "path": "./tsconfig.app.json" },
+		{ "path": "./tsconfig.node.json" }
+	],
+	"compilerOptions": {
+		"erasableSyntaxOnly": true,
+		"baseUrl": "./src",
+		"paths": {
+			"@app/*": ["app/*"],
+			"@shared/*": ["shared/*"],
+			"@entities/*": ["entities/*"],
+			"@features/*": ["features/*"],
+			"@widgets/*": ["widgets/*"],
+			"@pages/*": ["pages/*"],
+			"@processes/*": ["processes/*"]
+		},
+		"typeRoots": ["./types", "./node_modules/@types"]
+	}
+}

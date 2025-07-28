@@ -1,0 +1,172 @@
+.table {
+	position: relative;
+	width: fit-content;
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	tr {
+		display: flex;
+		width: 1000px;
+		padding-bottom: 8px;
+		margin-bottom: 8px;
+		border-bottom: 2px solid #414141;
+
+		th {
+			font-size: var(--normal-font-size);
+			font-weight: normal;
+			color: var(--grey-color);
+			text-align: left;
+			width: 100%;
+			padding-right: 16px;
+		}
+
+		td {
+			font-size: var(--small-font-size);
+			width: 700px;
+			overflow-x: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			padding-right: 16px;
+			align-self: center;
+		}
+	}
+
+	tbody {
+		height: 750px;
+		overflow: auto;
+	}
+
+	thead {
+		tr {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+
+	caption {
+		text-align: left;
+		font-size: var(--large-font-size);
+		font-weight: bold;
+		width: 100%;
+		background-color: var(--light-black-color);
+		border-bottom: 17px solid var(--light-black-color);
+	}
+
+	@media (max-width: 1024px) {
+		width: 800px;
+		overflow: auto;
+		gap: 12px;
+
+		tr {
+			width: 780px;
+			td,
+			th {
+				width: 200px;
+			}
+		}
+
+		.email {
+			display: none;
+		}
+
+		.employment {
+			display: none;
+		}
+
+		.id {
+			margin-right: 100px;
+		}
+
+		caption {
+			position: sticky;
+			z-index: 3;
+			left: 0;
+			top: 0;
+		}
+
+		thead {
+			position: sticky;
+			z-index: 3;
+			left: 0;
+			top: 36px;
+			background-color: var(--light-black-color);
+			border-bottom: 3px solid var(--light-black-color);
+		}
+	}
+
+	@media (max-width: 910px) {
+		width: 100%;
+
+		.email {
+			width: 100%;
+			display: block;
+		}
+
+		.employment {
+			width: 100%;
+			display: block;
+		}
+
+		thead {
+			display: none;
+		}
+
+		tbody {
+			display: flex;
+			width: 100%;
+			flex:1;
+			min-height: 350px;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 24px;
+
+			tr {
+				width: 40%;
+				display: flex;
+				flex-wrap: wrap;
+				gap: 24px 0;
+				padding: 24px 0;
+
+				td {
+					width: fit-content;
+					margin-right: 0;
+					width: 100%;
+				}
+
+				.id {
+					width: 100%;
+					margin-right: 0px;
+				}
+
+				.fullName {
+					font-size: var(--large-font-size);
+				}
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		gap: 8px;
+
+		tbody {
+			tr {
+				width: 100%;
+			}
+		}
+	}
+
+	@media (max-width: 540px) {
+		gap: 8px;
+
+		tbody {
+			max-height: 350px;
+
+			tr {
+				width: 100%;
+			}
+		}
+	}
+}

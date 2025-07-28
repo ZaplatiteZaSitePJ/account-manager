@@ -1,0 +1,26 @@
+.userForm {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 64px;
+	padding: 48px 24px;
+	border-radius: 24px;
+
+	&__buttonsContainer {
+		display: flex;
+		align-items: center;
+		gap: 48px;
+		justify-content: end;
+
+		a {
+			font-size: var(--small-font-size);
+		}
+	}
+}
+
+.errorDiv {
+	p {
+		text-align: center;
+		color: var(--red-color);
+	}
+}

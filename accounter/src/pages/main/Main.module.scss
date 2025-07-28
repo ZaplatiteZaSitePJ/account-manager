@@ -1,0 +1,21 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 40px 55px;
+	overflow: auto;
+	height: calc(100vh - 118px);
+
+	@media (max-width: 910px) {
+		padding: 40px 20px;
+	}
+
+	@media (max-width: 540px) {
+		height: fit-content;
+		padding: 40px 20px;
+	}
+
+
+
+
+}

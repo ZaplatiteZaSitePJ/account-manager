@@ -1,0 +1,51 @@
+.userForm {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 32px;
+
+	&__nameContainer,
+	&__contactsContainer,
+	&__passwordContainer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 24px 24px;
+	}
+
+	&__buttonsContainer {
+		margin-top: 16px;
+		display: flex;
+		gap: 48px;
+		justify-content: end;
+	}
+
+	&__userAgreement {
+		margin-top: 36px;
+		font-size: var(--small-font-size);
+
+		input {
+			margin-right: 8px;
+		}
+	}
+}
+
+h2 {
+	font-size: var(--large-font-size);
+	font-weight: bold;
+	width: 100%;
+}
+
+.errorDiv {
+	align-self: left;
+	width: 10%;
+	height: 3px;
+	margin-top: 16px;
+	background-color: var(--red-color);
+}
+
+.subInfo {
+	font-size: var(--small-font-size);
+	color: var(--grey-color);
+	margin-top: 12px;
+	width: 100%;
+}
