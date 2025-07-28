@@ -34,7 +34,7 @@
 	}
 
 	tbody {
-		height: 750px;
+		height: 300px;
 		overflow: auto;
 	}
 
@@ -94,6 +94,10 @@
 			top: 36px;
 			background-color: var(--light-black-color);
 			border-bottom: 3px solid var(--light-black-color);
+		}
+
+		tbody {
+			min-height: 300px;
 		}
 	}
 
