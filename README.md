@@ -9,7 +9,7 @@
 ### Суть проекта:
 
 - Существует admin (log: admin@inno.tech, pas: admin)
-  [![Авторизация](auth.gif)](https://raw.githubusercontent.com/ZaplatiteZaSitePJ/t1-accounter/master/auth.gif)
+  [![Авторизация](auth.gif)](https://raw.githubusercontent.com/ZaplatiteZaSitePJ/account-manager/master/auth.gif)
 - Admin может создавать и удалять других пользователей
   ![Создание аккаунта](create_acc.gif)
   ![Функционал админа](funcs.gif)
