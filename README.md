@@ -38,8 +38,7 @@
     -   HTML / CSS / SCSS
     -   React / TS
 -   #### Дополнительный
-    -   Local Storage
-    -   Cookie
+    -   Cookie (http-only) с JWT
     -   Vite
     -   React Router
     -   React Hook Form
